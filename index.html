@@ -1,56 +1,329 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/node-forge/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Node-Forge | Искусство разработки AI-ботов</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesque:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/node-forge/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/node-forge/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/node-forge/assets/styles-DsegLxue.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+  <nav class="header__nav container">
+    <a href="/" class="header__logo">
+      <span class="logo__dot"></span> Node-Forge
+    </a>
+    <ul class="header__menu">
+      <li><a href="#hero" class="header__link">Главная</a></li>
+      <li><a href="#tech" class="header__link">Технологии</a></li>
+      <li><a href="#process" class="header__link">Процесс</a></li>
+      <li><a href="#blog" class="header__link">Блог</a></li>
+      <li><a href="#cases" class="header__link">Кейсы</a></li>
+    </ul>
+    <a href="#contact" class="header__cta">Связаться</a>
+    <button class="header__burger" aria-label="Menu">
+      <span></span>
+    </button>
+  </nav>
 </header>
+<div class="mobile-menu">
+  <div class="mobile-menu__content">
+    <ul class="mobile-menu__list">
+      <li><a href="#hero" class="mobile-menu__link">Главная</a></li>
+      <li><a href="#tech" class="mobile-menu__link">Технологии</a></li>
+      <li><a href="#benefits" class="mobile-menu__link">Преимущества</a></li>
+      <li><a href="#blog" class="mobile-menu__link">Блог</a></li>
+      <li><a href="#contact" class="mobile-menu__link">Контакты</a></li>
+    </ul>
+  </div>
+</div>
 
-
-    <main>
+<main id="smooth-wrapper">
+  <div id="smooth-content">
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+    <div class="container">
+        <div class="hero__content">
+            <span class="badge" data-aos="fade-up">Платформа года 2025</span>
+            <h1 class="hero__title split-text">Технологии, которые работают на вас</h1>
+            <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="200">
+                AI-инструменты для реальных задач: от простых чат-ботов до сложных автономных ассистентов. Постройте
+                карьеру, которая работает на вас.
+            </p>
+            <div class="hero__btns" data-aos="fade-up" data-aos-delay="400">
+                <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+                <a href="#tech" class="btn btn--secondary">Узнать детали</a>
+            </div>
+        </div>
+    </div>
+    <div class="hero__visual">
+        <div class="hero__blob"></div>
+    </div>
+</section>
+
+<section class="section tech" id="tech">
+    <div class="container">
+        <div class="section__grid">
+            <div class="section__info">
+                <h2 class="section__title">Технология нового поколения</h2>
+                <p class="section__text">
+                    Мы создаем решения, которые меняют правила игры. Наша передовая цифровая инфраструктура позволяет
+                    развернуть AI-ассистента всего за несколько кликов.
+                </p>
+                <ul class="section__check-list">
+                    <li><i data-lucide="check-circle"></i> Быстрый и лёгкий старт</li>
+                    <li><i data-lucide="check-circle"></i> Подключение занимает 2 минуты</li>
+                    <li><i data-lucide="check-circle"></i> Экспертная поддержка на всех этапах</li>
+                </ul>
+            </div>
+            <div class="section__image-wrapper">
+                <img src="/node-forge/assets/one-APo3-VS0.jpg" alt="Tech" class="rounded-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section benefits" id="benefits">
+    <div class="container">
+        <div class="section__header center">
+            <h2 class="section__title">Ваши возможности</h2>
+            <p class="section__subtitle">Откройте новые возможности и расширьте горизонты проекта</p>
+        </div>
+        <div class="benefits__grid">
+            <div class="benefit-card">
+                <div class="benefit-card__icon"><i data-lucide="zap"></i></div>
+                <h3>Инновационная технология</h3>
+                <p>Использование последних моделей LLM для максимальной точности ответов.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon"><i data-lucide="trending-up"></i></div>
+                <h3>Стратегия роста</h3>
+                <p>Масштабируйте свой бизнес за счет автоматизации клиентской поддержки.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon"><i data-lucide="shield-check"></i></div>
+                <h3>Проверенный партнер</h3>
+                <p>Методологии, доказавшие свою эффективность в десятках проектов.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section blog" id="blog">
+    <div class="container">
+        <div class="section__header">
+            <h2 class="section__title">Блог Node-Forge</h2>
+            <a href="#" class="link-more">Смотреть все статьи <i data-lucide="arrow-right"></i></a>
+        </div>
+        <div class="blog__grid">
+            <article class="blog-card">
+                <div class="blog-card__img"><img src="/node-forge/assets/two-BzCkERuq.jpg" alt="Post"></div>
+                <div class="blog-card__content">
+                    <span class="blog-card__date">Декабрь 2025</span>
+                    <h3>Как AI меняет подход к разработке в Европе</h3>
+                    <p>Разбираем пошаговый путь, понятный каждому...</p>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-card__img"><img src="/node-forge/assets/four-CMTV_nOv.jpg" alt="Post"></div>
+                <div class="blog-card__content">
+                    <span class="blog-card__date">Ноябрь 2025</span>
+                    <h3>Технология для пассивного дохода</h3>
+                    <p>Практики, применимые уже сегодня для вашего бизнеса.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<section class="section process" id="process">
+    <div class="container">
+        <div class="section__header center">
+            <span class="badge">Методология</span>
+            <h2 class="section__title">Путь к вашему AI-ассистенту</h2>
+        </div>
+        <div class="process__timeline">
+            <div class="timeline-step">
+                <div class="timeline-step__marker">
+                    <i data-lucide="search"></i>
+                </div>
+                <div class="timeline-step__content rounded-block-small">
+                    <span class="step-num">01</span>
+                    <h3>Аналитика и Стратегия</h3>
+                    <p>Глубоко погружаемся в бизнес-процессы. Оцениваем перспективы проекта и выбираем оптимальный стек
+                        технологий (Node.js, Python AI stack) под конкретные задачи.</p>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="timeline-step__marker">
+                    <i data-lucide="pen-tool"></i>
+                </div>
+                <div class="timeline-step__content rounded-block-small">
+                    <span class="step-num">02</span>
+                    <h3>Прототипирование и Обучение</h3>
+                    <p>Создаем архитектуру диалогов. Собираем датасеты и проводим первичное обучение (fine-tuning)
+                        языковой модели на ваших данных для максимальной точности.</p>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="timeline-step__marker">
+                    <i data-lucide="code-2"></i>
+                </div>
+                <div class="timeline-step__content rounded-block-small">
+                    <span class="step-num">03</span>
+                    <h3>Разработка и Интеграция</h3>
+                    <p>Пишем чистый, масштабируемый код. Интегрируем бота с вашими CRM, базами данных и внешними API.
+                        Настраиваем сложную логику и сценарии.</p>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="timeline-step__marker">
+                    <i data-lucide="rocket"></i>
+                </div>
+                <div class="timeline-step__content rounded-block-small">
+                    <span class="step-num">04</span>
+                    <h3>Деплой и Поддержка</h3>
+                    <p>Финальное тестирование, развертывание на защищенных серверах в Европе. Обеспечиваем мониторинг
+                        24/7 и дальнейшее дообучение модели.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section cases" id="cases">
+    <div class="container">
+        <div class="section__header">
+            <span class="badge">Портфолио</span>
+            <h2 class="section__title">Решения, которые меняют правила</h2>
+        </div>
+        <div class="cases__grid-overlay">
+            <a href="#contact" class="case-overlay">
+                <div class="case-overlay__bg">
+                    <img src="/node-forge/assets/three-C2qSM6WZ.jpg" alt="E-commerce Bot Case">
+                </div>
+                <div class="case-overlay__content">
+                    <div class="case-top">
+                        <span class="case-tag">E-commerce Europe</span>
+                    </div>
+                    <div class="case-bottom">
+                        <h3>AI-консультант для ритейла</h3>
+                        <p>Автоматизация 85% запросов поддержки и рост конверсии на 12% за первый квартал.</p>
+                        <span class="case-link">Смотреть кейс <i data-lucide="arrow-up-right"></i></span>
+                    </div>
+                </div>
+            </a>
+            <a href="#contact" class="case-overlay">
+                <div class="case-overlay__bg">
+                    <img src="/node-forge/assets/five-CUYkqPsG.jpg" alt="FinTech Bot Case">
+                </div>
+                <div class="case-overlay__content">
+                    <div class="case-top">
+                        <span class="case-tag">FinTech & Legal</span>
+                    </div>
+                    <div class="case-bottom">
+                        <h3>Бот-аналитик документов</h3>
+                        <p>Интеллектуальный поиск по базе договоров с использованием LLM. Сокращение времени анализа в
+                            10 раз.</p>
+                        <span class="case-link">Смотреть кейс <i data-lucide="arrow-up-right"></i></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="section contact" id="contact">
+    <div class="container">
+        <div class="contact__box">
+            <div class="contact__info">
+                <h2 class="section__title">Бесплатная консультация</h2>
+                <p>Оцените перспективы проекта вместе с нашими экспертами.</p>
+            </div>
+            <form id="contactForm" class="contact__form">
+                <div class="form__group">
+                    <input type="text" id="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form__group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form__group">
+                    <input type="tel" id="phone" placeholder="Телефон" required>
+                </div>
+                <div class="form__captcha">
+                    <span id="captcha-question"></span>
+                    <input type="number" id="captcha-answer" placeholder="Ответ" required>
+                </div>
+                <label class="form__checkbox">
+                    <input type="checkbox" required>
+                    <span>Я согласен на обработку персональных данных</span>
+                </label>
+                <button type="submit" class="btn btn--primary">Запросить доступ</button>
+                <div id="formResponse" class="form-message"></div>
+            </form>
+        </div>
+    </div>
+</section>
+  </div>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="footer__container container">
+    <div class="footer__col footer__col--brand">
+      <a href="/" class="footer__logo">Node-Forge</a>
+      <p class="footer__desc">Передовая цифровая инфраструктура для создания интеллектуальных ассистентов.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Навигация</h4>
+      <ul class="footer__list">
+        <li><a href="#tech">Технологии</a></li>
+        <li><a href="#process">Процесс</a></li>
+        <li><a href="#blog">Блог</a></li>
+        <li><a href="#cases">Кейсы</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Документы</h4>
+      <ul class="footer__list">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="return.html">Return Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="personal-data-policy.html">Data Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Контакты</h4>
+      <ul class="footer__contact-list">
+        <li><i data-lucide="map-pin"></i> Kurfürstendamm 212, 10719 Berlin</li>
+        <li><i data-lucide="mail"></i> support@node-forge.blog</li>
+        <li><i data-lucide="phone"></i> +49 30 884 20 0</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom container">
+    <p>&copy; 2025 Node-Forge. Все права защищены. Технологии, которые работают на вас.</p>
   </div>
 </footer>
-
+    <div id="cookiePopup" class="cookie-popup">
+      <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.
+      </p>
+      <button id="acceptCookies" class="btn btn--small">Принять</button>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
 
   </body>
 </html>
