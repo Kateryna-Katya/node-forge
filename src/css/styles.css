@@ -852,3 +852,121 @@ h4 {
         height: 400px;
     }
 }
+/* --- Стили для Юридических страниц --- */
+.legal-page .pages {
+    padding: 160px 0 80px;
+}
+
+.pages__wrapper {
+    background: var(--block-bg);
+    padding: 60px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.pages__wrapper h1 {
+    font-size: clamp(1.4rem, 5vw, 3.5rem);
+    color: var(--accent-color);
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 20px;
+}
+
+.pages__content h2 {
+    font-size: 1.5rem;
+    margin: 40px 0 20px;
+    color: #fff;
+}
+
+.pages__content p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.lead {
+    font-size: 1.3rem !important;
+    color: #fff !important;
+    margin-bottom: 40px !important;
+}
+
+.styled-list {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.styled-list li {
+    margin-bottom: 15px;
+    color: var(--text-secondary);
+    position: relative;
+    list-style: none;
+    padding-left: 25px;
+}
+
+.styled-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+.contact-card {
+    margin-top: 60px;
+    padding: 40px;
+    background: var(--bg-color);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(193, 255, 114, 0.1);
+}
+
+.accent-link {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-bottom: 1px dashed var(--accent-color);
+    transition: var(--transition);
+}
+
+.accent-link:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .pages__wrapper {
+        padding: 30px 20px;
+    }
+}
+/* --- Стили для страницы Возврата --- */
+.step-box {
+    margin: 40px 0;
+}
+
+.step-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: var(--accent-color);
+    color: var(--bg-color);
+    border-radius: 50%;
+    font-weight: 700;
+    margin-bottom: 15px;
+    box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.info-block p {
+    font-size: 1rem !important;
+    margin-bottom: 0 !important;
+}
+
+.warning-box i {
+    vertical-align: middle;
+    margin-right: 8px;
+}
