@@ -1,19 +1,29 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+  <nav class="header__nav container">
+    <a href="/" class="header__logo">
+      <span class="logo__dot"></span> Node-Forge
+    </a>
+    <ul class="header__menu">
+      <li><a href="#hero" class="header__link">Главная</a></li>
+      <li><a href="#tech" class="header__link">Технологии</a></li>
+      <li><a href="#process" class="header__link">Процесс</a></li>
+      <li><a href="#blog" class="header__link">Блог</a></li>
+      <li><a href="#cases" class="header__link">Кейсы</a></li>
+    </ul>
+    <a href="#contact" class="header__cta">Связаться</a>
+    <button class="header__burger" aria-label="Menu">
+      <span></span>
+    </button>
+  </nav>
 </header>
+<div class="mobile-menu">
+  <div class="mobile-menu__content">
+    <ul class="mobile-menu__list">
+      <li><a href="#hero" class="mobile-menu__link">Главная</a></li>
+      <li><a href="#tech" class="mobile-menu__link">Технологии</a></li>
+      <li><a href="#benefits" class="mobile-menu__link">Преимущества</a></li>
+      <li><a href="#blog" class="mobile-menu__link">Блог</a></li>
+      <li><a href="#contact" class="mobile-menu__link">Контакты</a></li>
+    </ul>
+  </div>
+</div>
